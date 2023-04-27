@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>title goes here</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <footer>
+      <p>
+        There are <%= @users.count %> users with a total of <%= count_interests %> interests.
+      </p>
+      <a href="/">Homepage</a>
+    </footer>
+  </body>
+</html>

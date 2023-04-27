@@ -1,0 +1,16 @@
+<p>This is the page for <%= @user.capitalize %>!</p>
+<p>Their email is: <%= @email %></p>
+<p>
+  They have the following interests:
+  <%= @user_interests.join(', ') %>
+</p>
+
+<p>Learn more about our other users:</p>
+<ul>
+  <% @users.each do |name| %>
+    <% next if name == @user %>
+    <li>
+      <a href="/users/<%= name %>"><%= name.capitalize %></a>
+    </li>
+  <% end %>
+</ul>

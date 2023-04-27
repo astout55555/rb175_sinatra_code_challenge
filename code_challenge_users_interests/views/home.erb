@@ -1,0 +1,10 @@
+<h2>Welcome to UserNet!</h2>
+
+<h4>These are our current users:</h4>
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <a href="/users/<%= user %>"><%= user.capitalize %></a>
+    </li>
+  <% end %>
+</ul>
